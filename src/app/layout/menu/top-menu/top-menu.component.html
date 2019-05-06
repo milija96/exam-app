@@ -1,0 +1,11 @@
+<div class="content-wrap">
+  <h1>{{ selected.name }}</h1>
+  <div class="form-group subject">
+    <div class="subject-label"></div>
+     <div class="subject-input">
+        <select class="form-control subject-input" id="subject" [(ngModel)]="selected" (change)="subjectChange(selected)" (ngModel)="availableSubjects" required>
+          <option *ngFor="let sub of availableSubjects" [ngValue]="sub">{{sub.name}}</option>
+          </select>
+     </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+.content-wrap {
+    height: 20%;
+}
+* {
+    font-family:  "Courier New", Courier, monospace
+}
+h1 {
+    margin-top:  0;
+}
+
+.subject {
+    display: flex;
+    flex-direction: row;
+}
+
+.subject-input {
+    flex-grow: 1;
+}
+
+.subject-label {
+    flex-grow: 8;  
+}

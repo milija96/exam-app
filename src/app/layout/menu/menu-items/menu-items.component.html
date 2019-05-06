@@ -1,0 +1,6 @@
+<ul >
+      <li *ngFor="let item of menuItems" class="item-wrap">
+          <i id="icon" class="{{item.icon}}"></i>
+          <a href="#" id="name" routerLink="{{item.routerLink}}" (click)="checkLabel(item)">{{item.name}}</a>
+      </li>
+</ul>

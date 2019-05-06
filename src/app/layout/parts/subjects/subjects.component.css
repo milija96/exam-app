@@ -1,0 +1,35 @@
+.exam-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.exam {
+    width: 20vh;
+    height: 20vh;
+    border: 1px solid whitesmoke;
+    margin: 5px;
+}
+
+#add-exam {
+    font-size: 50px;
+    text-align: center;
+    vertical-align: middle;
+    width: 20vh;
+    height: 20vh;
+    margin: 5px;
+    padding: 10px;
+    color: whitesmoke;
+}
+
+#a:hover {
+    cursor: pointer;
+}
+
+h3 {
+    color: black;
+}
+
+label{
+    color: black;
+}

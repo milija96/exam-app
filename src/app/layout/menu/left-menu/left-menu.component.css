@@ -1,0 +1,15 @@
+
+.menu-wrap {
+    background-color: #181745;
+    color: #fff;
+    height: 100%;
+    font-family:  "Courier New", Courier, monospace
+}
+h1 {
+    margin-top:  0;
+}
+
+.logo { 
+    text-align: center;
+    font-family:  "Courier New", Courier, monospace
+}

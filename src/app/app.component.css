@@ -1,0 +1,33 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.content-wrap {
+    height:100vh;
+}
+
+.left-menu {
+    flex-grow: 1;
+    height:100vh;
+}
+
+.top-menu {
+    flex-grow: 6;
+}
+
+.changable-view {
+    flex-grow: 6;
+    background: linear-gradient(to bottom left,#216e93,#21648a,#1f5881,#172d5b,#191c51);
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-wrap {
+    height: 100vh;
+    margin: 0;
+    background-image: url("https://wallpaperplay.com/walls/full/d/e/5/79653.jpg");  
+}

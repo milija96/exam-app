@@ -1,0 +1,26 @@
+.item-wrap {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    align-self: flex-start;
+}
+#icon {
+    font-size: 25px;
+}
+#name {
+    display: block;
+    color: #8c8ba6;
+    font-size: 15px;
+    text-decoration: none;
+    font-family:  "Courier New", Courier, monospace;
+    margin-bottom: 10px;
+}
+
+.cont-wrap {
+    display: flex;
+    flex-direction: row;  
+}
+
+.flex-end {
+    align-self: flex-start;
+}

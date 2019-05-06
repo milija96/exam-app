@@ -1,0 +1,61 @@
+<div class="wrap col-md-8">
+  <div class="actions">
+    <button class="btn btn-success" (click)="ngxSmartModalService.getModal('addModal').open()">Dodaj grupu</button>
+    <ngx-smart-modal #addModal identifier="addModal">
+      <h3>Dodavanje grupe</h3>
+      <form (ngSubmit)="addGroup(form)" #form="ngForm">
+        <div class="form-group">
+          <label for="name">Naziv grupe</label>
+          <input type="text" id="name" name="name" ngModel class="form-control">
+          <label for="date">Datum</label>
+          <input type="date" id="date" name="date" ngModel class="form-control">
+          <label for="capacity">Kapacitet</label>
+          <input type="number" id="capacity" name="capacity" ngModel class="form-control">
+        </div>
+        <button (click)="addModal.close()" type="buttons">Zatvori</button>
+        <button class="btn btn-primary" type="submit">Prijavi se</button>
+      </form>
+    </ngx-smart-modal>
+  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Indeks</th>
+        <th scope="col">Naziv</th>
+        <th scope="col">Akcije</th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let group of groups">
+        <tr>
+          <td>{{group.id}}</td>
+          <td>{{group.name}}</td>
+          <td class="actions"><button type="button" class="btn btn-primary" (click)="ngxSmartModalService.getModal('editModal').open(); setCurrentGroup(group)">
+              Izmeni
+            </button>
+            <button class="btn btn-danger" (click)="ngxSmartModalService.getModal('deleteModal').open();  setCurrentGroup(group)">Izbriši</button></td>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>
+  <ngx-smart-modal #editModal identifier="editModal">
+    <h3>Izmeni grupu</h3>
+    <form (ngSubmit)="editGroup(editForm)" #editForm="ngForm">
+      <div class="form-group">
+        <label for="name">Naziv grupe</label>
+        <input type="text" id="name" name="name" ngModel class="form-control" [(ngModel)]="selectedGroup.name">
+        <label for="date">termin</label>
+        <input type="date" id="date" name="date" ngModel class="form-control">
+      </div>
+      <button class="btn btn-info" (click)="editModal.close()">Zatvori</button>
+      <button class="btn btn-primary" type="submit">Izmeni</button>
+    </form>
+  </ngx-smart-modal>
+
+  <ngx-smart-modal #deleteModal identifier="deleteModal">
+    <h3>Izbriši grupu</h3>
+    <p>Da li ste sigurni da želite da izbrišete grupu: <strong>{{selectedGroup.name}}</strong></p>
+      <button class="btn btn-info" (click)="deleteModal.close()">Zatvori</button>
+      <button class="btn btn-primary" type="submit">Izbriši</button>
+  </ngx-smart-modal>
+</div>

@@ -1,0 +1,9 @@
+.content-wrap {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+#canvas {
+    color: white !important;
+}

@@ -1,0 +1,19 @@
+<div class="login-wrap"  *ngIf="!authenticated">
+  <app-login></app-login>
+</div>
+<div class="content-wrap"  *ngIf="authenticated">
+  <div class="flex-container">
+    <div class="left-menu">
+      <app-left-menu>
+      </app-left-menu>
+    </div>
+    <div class="changable-view">
+      <div>
+        <app-top-menu></app-top-menu>
+      </div>
+      <div>
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>
