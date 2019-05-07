@@ -1,11 +1,16 @@
 import { Component, OnInit } from '@angular/core';
+<<<<<<< HEAD
 import { IMenuItem } from '../../../models/models'
 import { AuthService } from 'src/app/services/auth.service';
+=======
+
+>>>>>>> c2794f9dcc36da8482b89e757b8ab20d3108a4f1
 @Component({
   selector: 'app-menu-items',
   templateUrl: './menu-items.component.html',
   styleUrls: ['./menu-items.component.css']
 })
+<<<<<<< HEAD
 
 export class MenuItemsComponent implements OnInit {
   currentUsser: any;
@@ -34,6 +39,13 @@ export class MenuItemsComponent implements OnInit {
     if(this.currentUsser.role != 'admin') {
       this.menuItems.splice(1, 2);
     }
+=======
+export class MenuItemsComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+>>>>>>> c2794f9dcc36da8482b89e757b8ab20d3108a4f1
   }
 
 }

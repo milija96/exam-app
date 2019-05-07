@@ -11,7 +11,11 @@
   },
   "private": true,
   "dependencies": {
+<<<<<<< HEAD
     "@angular/animations": "^7.2.13",
+=======
+    "@angular/animations": "~7.2.0",
+>>>>>>> c2794f9dcc36da8482b89e757b8ab20d3108a4f1
     "@angular/common": "~7.2.0",
     "@angular/compiler": "~7.2.0",
     "@angular/core": "~7.2.0",
@@ -19,11 +23,15 @@
     "@angular/platform-browser": "~7.2.0",
     "@angular/platform-browser-dynamic": "~7.2.0",
     "@angular/router": "~7.2.0",
+<<<<<<< HEAD
     "chart.js": "^2.8.0",
     "core-js": "^2.5.4",
     "font-awesome": "^4.7.0",
     "ngx-smart-modal": "^7.1.1",
     "ngx-toastr": "^10.0.2",
+=======
+    "core-js": "^2.5.4",
+>>>>>>> c2794f9dcc36da8482b89e757b8ab20d3108a4f1
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
     "zone.js": "~0.8.26"

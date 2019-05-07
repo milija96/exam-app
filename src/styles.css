@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+<<<<<<< HEAD
 @import "~ngx-smart-modal/ngx-smart-modal";
  
 body {
@@ -8,3 +9,5 @@ body {
 * {
    font-family:  "Courier New", Courier, monospace;
 }
+=======
+>>>>>>> c2794f9dcc36da8482b89e757b8ab20d3108a4f1

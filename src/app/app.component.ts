@@ -1,11 +1,16 @@
+<<<<<<< HEAD
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from './services/auth.service';
+=======
+import { Component } from '@angular/core';
+>>>>>>> c2794f9dcc36da8482b89e757b8ab20d3108a4f1
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+<<<<<<< HEAD
 export class AppComponent implements OnInit{
   title = 'new-app';
   authenticated: boolean = false;
@@ -20,4 +25,8 @@ export class AppComponent implements OnInit{
       }
     )
   }
+=======
+export class AppComponent {
+  title = 'new-app';
+>>>>>>> c2794f9dcc36da8482b89e757b8ab20d3108a4f1
 }

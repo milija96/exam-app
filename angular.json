@@ -23,9 +23,13 @@
               "src/assets"
             ],
             "styles": [
+<<<<<<< HEAD
               "src/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/ngx-toastr/toastr.css"
+=======
+              "src/styles.css"
+>>>>>>> c2794f9dcc36da8482b89e757b8ab20d3108a4f1
             ],
             "scripts": [],
             "es5BrowserSupport": true
@@ -82,8 +86,12 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
+<<<<<<< HEAD
               "src/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
+=======
+              "src/styles.css"
+>>>>>>> c2794f9dcc36da8482b89e757b8ab20d3108a4f1
             ],
             "scripts": [],
             "assets": [
