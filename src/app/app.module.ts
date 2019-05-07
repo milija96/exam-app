@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './layout/login/login.component';
 import { TopMenuComponent } from './layout/menu/top-menu/top-menu.component';
-<<<<<<< HEAD
 import { LeftMenuComponent } from './layout/menu/left-menu/left-menu.component';
 import { MenuItemsComponent } from './layout/menu/menu-items/menu-items.component';
 import { StatisticsComponent } from './layout/parts/statistics/statistics.component';
@@ -17,10 +16,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
  
 import { ToastrModule } from 'ngx-toastr';
-=======
-import { LeftMenuComponent } from './layout/left-menu/left-menu.component';
-import { MenuItemsComponent } from './layout/menu/menu-items/menu-items.component';
->>>>>>> c2794f9dcc36da8482b89e757b8ab20d3108a4f1
 
 @NgModule({
   declarations: [
@@ -28,7 +23,6 @@ import { MenuItemsComponent } from './layout/menu/menu-items/menu-items.componen
     LoginComponent,
     TopMenuComponent,
     LeftMenuComponent,
-<<<<<<< HEAD
     MenuItemsComponent,
     StatisticsComponent,
     GroupsComponent,
@@ -42,12 +36,6 @@ import { MenuItemsComponent } from './layout/menu/menu-items/menu-items.componen
     NgxSmartModalModule.forRoot(),
     BrowserAnimationsModule,
     ToastrModule.forRoot()
-=======
-    MenuItemsComponent
-  ],
-  imports: [
-    BrowserModule
->>>>>>> c2794f9dcc36da8482b89e757b8ab20d3108a4f1
   ],
   providers: [],
   bootstrap: [AppComponent]
