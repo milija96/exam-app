@@ -24,11 +24,9 @@ export class SubjectService {
   }
 
   addExam(data: any): Observable<any> {
-    return this.http.post(environment.apiBaseUrl + 'kolokvijumi/new',   {
-      'naziv_kolokvijuma': 'Matematika',
-      'grupe': [
+    return this.http.post(environment.apiBaseUrl + 'kolokvijumi/novi',   {
+      'naziv_kolokvijuma': 'Matematika'
 
-      ]
   }, {headers: this.headers})
   
   }
